@@ -1,0 +1,26 @@
+{"burgers": [
+    {
+        "name": "Burger Special",
+        "description": "A very special burger.",
+        "Price": 7
+    },
+    {
+        "name": "Veggie Burger",
+        "description": "A very special Vegie burger.",
+        "Price": 2
+    },
+    {
+        "name": "Super Duper Burger",
+        "description": "A very Super Duper burger.",
+        "Price": 10
+    },
+    {
+        "name": "Kiddie Burger",
+        "description": "A very special burger for kids.",
+        "Price": 6
+    }
+], 
+"hotdogs": [], 
+"shakes": [], 
+"breakfast": []
+}
