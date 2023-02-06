@@ -1,0 +1,18 @@
+<div class="sidebar">
+    <h1>Menu</h1>
+    <ul class="navigation">
+        <li class="first">
+            <a class="<%= category.toLowerCase() === 'burgers' ? "active" : "" %>" href="/menu/burgers">BURGERS</a>
+        </li>
+        <li>
+            <a class="<%= category.toLowerCase() === 'hotdogs' ? "active" : "" %>" href="/menu/hotdogs">HOTDOGS</a>
+        </li>
+        <li>
+            <a class="<%= category.toLowerCase() === 'shakes' ? "active" : "" %>" href="/menu/shakes">SHAKES</a>
+        </li>
+        <li>
+            <a class="<%= category.toLowerCase() === 'breakfast' ? "active" : "" %>" href="/menu/breakfast">BREAKFAST</a>
+        </li>
+    </ul>
+    <a href="/menu/burgers" class="download">&nbsp;</a>
+</div>

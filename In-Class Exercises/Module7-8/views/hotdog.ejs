@@ -1,0 +1,26 @@
+<div class="content">
+    <div>
+        <div>
+            <h1>Hotdogs</h1>
+            <div> <a href="hotdog.html"><img src="/images/<%= image %>" width="434" height="327" alt=""></a> </div>
+            <ul>
+                <!--Create a loop-->
+                <% for (let i = 0; i < items.length; i++) { %>
+                    <%console.log(i)%>
+                    <%console.log(items.length-1)%>
+                    
+                    
+                    <li class="<%i === items.length-1 ? 'last' : '' %>"
+                        <h2><a href="/menu/hotdog"><%=items[i].name %></a></h2>
+                        <p>
+                            <%= items[i].description %>
+                        </p>
+                        <span class="price">$<%=items[i].price%></span>
+                    </li>
+                    <% } %>
+                    <!--end the loop-->
+            </ul>
+        </div>
+    </div>
+</div>
+<%- include("partials/menu-sidebar.ejs")%>

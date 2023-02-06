@@ -1,0 +1,23 @@
+<div class="content">
+    <div>
+        <div>
+            <h1><%= category %></h1>
+            <div> <a href="/menu/burger"><img src="/images/<%= image %>" width="434" height="288" alt=""></a> </div>
+            <ul>
+                <!--Create a loop-->
+                <% for (let i = 0; i < items.length; i++) { %>
+                    
+                <li class=<%= i === items.length ? "last" : "" %>
+                    <h2><a href="/menu/burger"><%=items[i].name %></a></h2>
+                    <p>
+                        <%= items[i].description %>
+                    </p>
+                    <span class="price">$<%=items[i].price%></span>
+                </li>
+                <% } %>
+                <!--end the loop-->
+            </ul>
+        </div>
+    </div>
+</div>
+<%- include("partials/menu-sidebar.ejs")%>
