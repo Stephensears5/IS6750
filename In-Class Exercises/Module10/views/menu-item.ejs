@@ -1,0 +1,23 @@
+<div class="content">
+    <div>
+        <div>
+            <h1>
+                <% const capCategory = category.charAt(0).toUpperCase() + category.slice(1);%>
+                <a href="/menu/<%= category %>"><%=capCategory%></a>
+            </h1>
+            <div> <a href="/menu/burgers/"><img src="<%= item.img %>" width="434" height="288" alt=""></a> </div>
+            <ul>
+                    <li class='last'>
+                        <h2><a href="/menu/burgers">
+                                <%= item.name %>
+                            </a></h2>
+                        <p>
+                            <%= item.description %>
+                        </p>
+                        <span class="price">$<%= item.price %></span>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<%- include('partials/menu-sidebar.ejs') %>

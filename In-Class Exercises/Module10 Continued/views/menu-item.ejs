@@ -1,0 +1,24 @@
+<div class="content">
+    <div>
+        <div>
+            <h1 style="text-transform: capitalize">
+                <a href="/menu/<%= category %>">&lt;<%= category %></a>
+            </h1>
+            <div> <a href="/menu/burgers"><img src="<%= item.itemImage %>" width="434" height="288" alt=""></a> </div>
+            <ul>
+               
+                    <li class="last">
+                        <h2><a href="/menu/<%= category %>">
+                                <%= item.itemName %>
+                            </a></h2>
+                        <p>
+                            <%= item.itemDescription %>
+                        </p>
+                        <span class="price">$<%= item.itemPrice %></span>
+                    </li>
+                   
+            </ul>
+        </div>
+    </div>
+</div>
+<%- include('partials/menu-sidebar.ejs') %>
