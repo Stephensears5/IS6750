@@ -22,4 +22,18 @@ router.get('/orders', shopController.getOrders);
 
 router.get('/checkout', shopController.getCheckout);
 
+router.get('/query-practice', shopController.getQueryPractice);
+
+router.get('/bulkaddproducts', shopController.bulkAddProducts);
+
+router.get('/startswithc', shopController.prodsStartWithC);
+
+router.get('/pricebtwn100&200', shopController.betweenTwoPrices);
+
+router.get('/desccontainwordyour', shopController.containsWordYour);
+
+router.get('/increasepriceofblenders', shopController.increasePrice);
+
+router.get('/deleteallproducts', shopController.deleteAllProducts);
+
 module.exports = router;

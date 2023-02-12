@@ -1,10 +1,7 @@
 const mysql = require('mysql2');
+const Sequelize = require('sequelize');
 
-const pool = mysql.createPool({
-    host: 'fadel-5750-sp23.ckm1cfmd3i4j.us-west-2.rds.amazonaws.com',
-    user: '5750kellyfadel',
-    database: '5750kellyfadel',
-    password: 'A00547972'
-});
+const sequelize = new Sequelize('5750stevesears', '5750stevesears', 'A01234875', {dialect: 'mysql', host: 'fadel-5750-sp23.ckm1cfmd3i4j.us-west-2.rds.amazonaws.com'});
 
-module.exports = pool.promise();
+module.exports = sequelize;
+
