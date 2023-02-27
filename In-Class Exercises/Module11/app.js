@@ -5,7 +5,8 @@ const path = require('path');
 const express = require('express');
 const ejs = require('ejs');
 const expressLayouts = require('express-ejs-layouts');
-
+const menuRoutes = require('./routes/menu-routes')
+const homeRoutes = require('./routes/home-routes')
 // Import local modules
 
 const homeController = require('./controllers/home-controller');
@@ -25,21 +26,8 @@ app.set('views', 'views');
 
 app.use(expressLayouts);
 
-// Define route handlers
-app.get("/", homeController.getHome);
-
-app.get("/about", homeController.getAbout);
-
-
-app.get("/contact", (req, res, next) => {
-    res.render("contact", {pageTitle: "Contact"});
-});
-
-// Return items in a category
-app.get("/menu/categories/:categoryId/items", menuController.getMenu);
-
-// Return a specific menu item
-app.get("/menu/categories/:categoryId/items/:itemId", menuController.getMenuItem)
+app.use('/menu', menuRoutes)
+app.use(homeRoutes)
 
 
 
