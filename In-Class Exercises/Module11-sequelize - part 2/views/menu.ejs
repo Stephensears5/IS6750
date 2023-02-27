@@ -1,0 +1,24 @@
+<div class="content">
+    <div>
+        <div>
+            <h1>
+                <%= category.catName %>
+            </h1>
+            <div> <a href="/menu/<%= category.catSlug %>"><img src="/images/<%= category.catImage %>" width="434" height="288" alt=""></a> </div>
+            <ul>
+                <% for (let i = 0; i < items.length; i++) { %>
+                    <li class="<%= i === items.length - 1 ? "last" : "" %>">
+                        <h2><a href="/menu/<%= category.catSlug %>/<%= items[i].itemSlug %>">
+                                <%= items[i].itemName %>
+                            </a></h2>
+                        <p>
+                            <%= items[i].itemDescription %>
+                        </p>
+                        <span class="price">$<%= items[i].itemPrice %></span>
+                    </li>
+                    <% } %>
+            </ul>
+        </div>
+    </div>
+</div>
+<%- include('partials/menu-sidebar.ejs',) %>
