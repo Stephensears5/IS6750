@@ -1,0 +1,11 @@
+<h1><span>style gallery</span></h1>
+		<ul class="gallery">
+			<% console.log("console", items[0].imageUrl) %>
+			<% for (let i = 0; i < items.length; i++) { %>
+				<li>
+					<a href="/styles/<%=items[i].titleSlug%>">
+						<img src="images/<%=items[i].imageUrl %>" alt="">
+					</a>
+				</li>
+			<% } %> 
+		</ul>

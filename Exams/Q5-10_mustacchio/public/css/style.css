@@ -81,6 +81,10 @@ p a:hover {
 #header ul li a:hover, #header ul li.selected a {
 	color: #0ba39c;
 }
+
+#header div ul.navigation li a.active {
+	color :#0Ba39C;
+}
 #body {
 	margin: 0;
 	padding: 0 0 30px;

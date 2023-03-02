@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Distinguished Stash",
+    "imageUrl": "mustache1.jpg",
+    "description": "A Distinguished Stash for your face"
+  },
+  {
+    "title": "Stash and beard",
+    "imageUrl": "mustache2.jpg",
+    "description": "Not just the stash"
+  },
+  {
+    "title": "Old man Stash",
+    "imageUrl": "mustache3.jpg",
+    "description": "This stash has seen many moons"
+  },
+  {
+    "title": "Funny Stash",
+    "imageUrl": "mustache4.jpg",
+    "description": "A silly stash"
+  },
+  {
+    "title": "Cool Stash",
+    "imageUrl": "mustache5.jpg",
+    "description": "the coolest stash in town"
+  },
+  {
+    "title": "Barely a stash",
+    "imageUrl": "mustache6.jpg",
+    "description": "guaranteed to look sorta like a mustache"
+  },
+  {
+    "title": "Thoughtful Stash",
+    "imageUrl": "mustache7.jpg",
+    "description": "The stash for all deep thinkers"
+  },
+  {
+    "title": "Long Stash",
+    "imageUrl": "mustache8.jpg",
+    "description": "These long whiskers are guaranteed to give you a sixth sense"
+  },
+  {
+    "title": "Combat Stash",
+    "imageUrl": "mustache9.jpg",
+    "description": "This stash says 'I'm Ready for hand to hand combat'"
+  }
+]
