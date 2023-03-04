@@ -4,7 +4,7 @@ const bulkStyles = require("../data/bulk-add-styles.json")
 exports.getStyles = async (req, res, next) => { 
  try{
     styles = await Styles.findAll();
-    console.log("Selected Style: ", styles);
+    // console.log("Selected Style: ", styles);
     if(styles){
         res.render("gallery", {pageTitle: "Styles", items: styles})
     }else {

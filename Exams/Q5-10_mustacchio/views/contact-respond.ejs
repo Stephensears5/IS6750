@@ -1,12 +1,14 @@
 <h1><span>respond to contact request</span></h1>
-		<form action="/contact" method="post">
+		<form action="/contacts/<%=items.id%>/update" method="post">
 			<div class="disabled">
-				<input type="text" name="name" id="fname" placeholder="name" disabled="disabled" value="Tom Selleck">
-				<input type="text" name="address" id="address" placeholder="address" disabled="disabled" value="1 Selleck Way">
-				<input type="email" name="email" id="email" placeholder="email" disabled="disabled" value="tom@selleck.com">
+				<%console.log(items)%>
+				<input type="text" name="name" id="name" placeholder="name" disabled="disabled" value="<%=items.name%>">
+				<input type="text" name="address" id="address" placeholder="address" disabled="disabled" value="<%=items.address%>">
+				<input type="email" name="email" id="email" placeholder="email" disabled="disabled" value="<%=items.email%>">
 				<input type="tel" name="phone" id="phone" placeholder="phone number (XXX-XXX-XXXX)"
-					pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" disabled="disabled" value="435-867-5309">
-				<textarea name="message" id="message" placeholder="MESSAGE" required disabled="disabled">With its incredible shape, form, and fullness, my Magnum P.I.-era mustache is, without a doubt, the greatest celebrity mustache the world has ever known...as if there was ever any doubt.
+					pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" disabled="disabled" value="<%=items.phone%>">
+				<textarea name="message" id="message" placeholder="MESSAGE" required disabled="disabled">
+					<%=items.message%>
 				</textarea>
 				<hr />
 			</div>
@@ -14,5 +16,5 @@
 			<input type="hidden" name="id" id="id" value="23598798797235">
 		
 			<input type="submit" name="send" id="send" value="send">
-			<a href="#" name="cancel" id="cancel">cancel</a>
+			<a href="/contacts" name="cancel" id="cancel">cancel</a>
 		</form>

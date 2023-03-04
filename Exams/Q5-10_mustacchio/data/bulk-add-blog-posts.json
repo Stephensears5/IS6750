@@ -1,0 +1,23 @@
+[
+    {
+        "title": "why i grew a mustache",
+        "summary":"Why this man decided to grow a mustache",
+        "content":"I decided to grow a mustache because it makes me feel alive.",
+        "imageUrl":"cutting-mustache.jpg",
+        "postDate":"3/1/2023"
+    },
+    {
+        "title": "in the country",
+        "summary":"What it's like having a mustache in the country",
+        "content":"I've never felt more like a cowboy",
+        "imageUrl":"in-the-country.jpg",
+        "postDate":"3/2/2023"
+    },
+    {
+        "title": "the mustache brothers",
+        "summary":"What it's like having a mustache with your brother. ",
+        "content":"I've never felt closer to my brother than when we both have big mustaches",
+        "imageUrl":"mustache-brothers.jpg",
+        "postDate":"3/3/2023"
+    }
+]

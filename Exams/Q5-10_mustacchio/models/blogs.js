@@ -3,7 +3,7 @@ const { Sequelize, DataTypes } = require("sequelize");
 const sequelize = require("../util/database");
 const slugify = require("slugify");
 
-const MustacheStyles = sequelize.define("styles", {
+const Blogs = sequelize.define("blogPosts", {
   // Define Attributes of a contact request
   id: {
     type: Sequelize.INTEGER,
@@ -15,6 +15,7 @@ const MustacheStyles = sequelize.define("styles", {
   title: {
     type: Sequelize.STRING(50),
     allowNull: false,
+    require: true,
     set(value) {
       this.setDataValue("title", value);
       //add the slug
@@ -23,19 +24,27 @@ const MustacheStyles = sequelize.define("styles", {
         slugify(value, { lower: true, trim: true })
       );
     },
+  },
+  summary: {
+    type: Sequelize.STRING(350),
+    allowNull: false,
     require: true,
+  },
+  content: {
+    type: Sequelize.STRING,
+    require: true
   },
   imageUrl: {
     type: Sequelize.STRING,
     allowNull: false,
-    validate: {
-      contains: "jpg",
-      contains: "png",
-    },
     require: true,
+    validate: {
+      contains: ["jpg","png"]
+
+    },
   },
-  description: { type: Sequelize.STRING, allowNull: false, require: true },
+  postDate: { type: Sequelize.DATE, allowNull: false, require: true },
   titleSlug: { type: Sequelize.STRING, allowNull: false, require: true },
 });
 
-module.exports = MustacheStyles;
+module.exports = Blogs;

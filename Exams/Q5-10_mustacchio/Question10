@@ -1,0 +1,5 @@
+I added a button to the bottom of the Blog Page.
+This button will redirect you to a blog creation page that allows you to Create
+a blog post.
+I didn't remove the jpg or png validation so you'll have to select an image from
+the public/images folder or put your own in that file. 
