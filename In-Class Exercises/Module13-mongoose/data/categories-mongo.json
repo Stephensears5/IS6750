@@ -1,0 +1,22 @@
+[
+    {
+        "name": "burgers",
+        "image": "burger.jpg",
+        "items": []
+    },
+    {
+        "name": "hotdogs",
+        "image": "hotdog.jpg",
+        "items": []
+    },
+    {
+        "name": "shakes",
+        "image": "shake.jpg",
+        "items": []
+    },
+    {
+        "name": "breakfast",
+        "image": "breakfast2.jpg",
+        "items": []
+    }
+]

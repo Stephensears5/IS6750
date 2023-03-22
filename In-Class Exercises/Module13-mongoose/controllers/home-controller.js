@@ -1,4 +1,4 @@
-const Contact = require('../models/contact');
+const Contact = require('../models/contact-mongoose');
 
 exports.getHome = (req, res, next) => {
     res.render("index", {pageTitle: "Home"});

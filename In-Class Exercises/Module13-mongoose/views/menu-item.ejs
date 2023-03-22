@@ -4,17 +4,17 @@
             <h1 style="text-transform: capitalize">
                 <a href="/menu/<%= category.slug %>">&lt;<%= category.name %></a>
             </h1>
-            <div> <a href="/menu/burgers"><img src="<%= item.itemImage %>" width="434" height="288" alt=""></a> </div>
+            <div> <a href="/menu/burgers"><img src="<%= item.image %>" width="434" height="288" alt=""></a> </div>
             <ul>
                
                     <li class="last">
                         <h2><a href="#">
-                                <%= item.itemName %>
+                                <%= item.name %>
                             </a></h2>
                         <p>
-                            <%= item.itemDescription %>
+                            <%= item.description %>
                         </p>
-                        <span class="price">$<%= item.itemPrice %></span>
+                        <span class="price">$<%= item.price %></span>
                     </li>
                    
             </ul>

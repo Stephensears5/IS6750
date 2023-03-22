@@ -37,17 +37,18 @@ exports.getMenu = async (req, res, next) => {
 
     // put risky code in try/catch block
     try {
-        const categories = await Category.find().populate('items.itemId');
+        const categories = await Category.find().populate('items');
         console.log(categories)
-        // const selectedCategory = categories.find(cat => cat.slug.toLowerCase() === catSlug.toLowerCase());
-        // console.log("Selected Category: ", selectedCategory);
-        // items = selectedCategory.items
-        // console.log("Items:", items);
-        // if (items) {
-        //     res.render("menu", { pageTitle: "Menu", category: selectedCategory, items: items, categories: categories });
-        // } else {
-        //     res.send("<h1>Oops!  No page found.</h1>")
-        // }
+        categories.forEach(category => { console.log(category.items)});
+        const selectedCategory = categories.find(cat => cat.slug.toLowerCase() === catSlug.toLowerCase());
+        console.log("Selected Category: ", selectedCategory);
+        items = selectedCategory.items
+        console.log("Items:", items);
+        if (items) {
+            res.render("menu", { pageTitle: "Menu", category: selectedCategory, items: items, categories: categories });
+        } else {
+            res.send("<h1>Oops!  No page found.</h1>")
+        }
     } catch (err) {
         console.log(err)
     }
@@ -56,6 +57,7 @@ exports.getMenu = async (req, res, next) => {
 
 exports.getMenuItem = (req, res, next) => {
     // Retrieve the parameter values from req.params
+    console.log(req.params)
     const catSlug = req.params.catSlug;
     const itemSlug = req.params.itemSlug;
     let categories, selectedCategory;
@@ -64,14 +66,14 @@ exports.getMenuItem = (req, res, next) => {
         .then((retrievedCategories) => {
             console.log("All categories:", JSON.parse(JSON.stringify(retrievedCategories)));
             categories = retrievedCategories;
-            selectedCategory = categories.find(cat => cat.catSlug.toLowerCase() === catSlug.toLowerCase());
+            selectedCategory = categories.find(cat => cat.slug.toLowerCase() === catSlug.toLowerCase());
             console.log("Selected Category: ", selectedCategory);
-            return MenuItem.find({})
+            return MenuItem.findOne({slug: itemSlug})
         })
         .then((item) => {
             console.log("Item is: ", item);
             if (item) {
-                res.render("menu-item", { pageTitle: item.itemName, category: selectedCategory, item: item, categories: categories });
+                res.render("menu-item", { pageTitle: item.name, category: selectedCategory, item: item, categories: categories });
             } else {
                 res.send("<h1>Sorry, item not found</h1>");
             }
