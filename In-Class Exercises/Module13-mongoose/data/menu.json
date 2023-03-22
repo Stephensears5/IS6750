@@ -1,0 +1,110 @@
+{
+    "burgers": {
+        "image": "burger.jpg",
+        "items": [
+            {
+                "id" : 1,
+                "name": "Burger Special",
+                "description": "A very special burger.",
+                "price": 7,
+                "image" : "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/copycat-western-bacon-cheeseburger-2-1649170836.jpeg"
+            },
+            {
+                "id" : 2,
+                "name": "Veggie Burger",
+                "description": "A very special veggie burger.",
+                "price": 2,
+                "image" : "https://render.fineartamerica.com/images/rendered/default/poster/8/6.5/break/images/artworkimages/medium/2/veggie-burger-lew-robertson.jpg"
+            },
+            {
+                "id" : 3,
+                "name": "Super Duper Burger",
+                "description": "A very super duper burger.",
+                "price": 10,
+                "image" : "https://resizer.otstatic.com/v2/photos/wide-huge/1/25808577.jpg"
+            },
+            {
+                "id" : 4,
+                "name": "Kiddie Burger",
+                "description": "A very special burger for kids.",
+                "price": 6,
+                "image" : "https://www.dairyqueen.com/dA/d0d6bb0e30/hamburger.png"
+            }
+        ]
+    },
+    "hotdogs": {
+        "image": "hotdog.jpg",
+        "items": [
+            {
+                "name": "Hotdog Special",
+                "description": "A very special hotdog.",
+                "price": 7
+            },
+            {
+                "name": "Bacon Cheesedog",
+                "description": "A very cheesy hotdog.",
+                "price": 2
+            },
+            {
+                "name": "King Size Hotdog",
+                "description": "This thing is enormous!",
+                "price": 10
+            },
+            {
+                "name": "Kiddie Hotdog",
+                "description": "Perfect for the little ones.",
+                "price": 6
+            }
+        ]
+    },
+    "shakes": {
+        "image": "shake.jpg",
+        "items": [
+            {
+                "name": "Chocolate Vanilla",
+                "description": "A classic favorite.",
+                "price": 7
+            },
+            {
+                "name": "Strawberry Smoothie",
+                "description": "Light and delicious!",
+                "price": 2
+            },
+            {
+                "name": "Mango Banana Medley",
+                "description": "Bursting with fruity flavor!",
+                "price": 10
+            },
+            {
+                "name": "Dark Chocolate Supreme",
+                "description": "Darkly decadent.",
+                "price": 6
+            }
+        ]
+    },
+    "breakfast": {
+        "image": "breakfast2.jpg",
+        "items": [
+            {
+                "name": "Strawberry Waffle",
+                "description": "A classic favorite.",
+                "price": 7
+            },
+            {
+                "name": "Bacon and Eggs",
+                "description": "Packed with protein.",
+                "price": 2
+            },
+            {
+                "name": "French Toast With Eggs",
+                "description": "Our special recipe",
+                "price": 10
+            },
+            {
+                "name": "Bacon and Pancakes",
+                "description": "Perfect for any morning.",
+                "price": 6
+            }
+        ]
+    }
+}
