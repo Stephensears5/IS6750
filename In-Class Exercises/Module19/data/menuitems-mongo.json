@@ -1,0 +1,19 @@
+[
+{"name":"Burger Special","description":"A very special burger.","price":"7","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/4\/43\/Burger_King_Quad_Stacker_cheeseburger.jpg\/640px-Burger_King_Quad_Stacker_cheeseburger.jpg"},
+{"name":"Veggie Burger","description":"A very special veggie burger.","price":"2","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/4\/43\/Veggie_burger_SuziJane_flickr_creative_commons.jpg\/640px-Veggie_burger_SuziJane_flickr_creative_commons.jpg"},
+{"name":"Super Duper Burger","description":"A very super duper burger.","price":"10","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8a\/Cake_depicting_a_cheeseburger.jpg\/640px-Cake_depicting_a_cheeseburger.jpg"},
+{"name":"Kiddie Burger","description":"A very special burger for kids.","price":"6","image":"https:\/\/olo-images-live.imgix.net\/ec\/ec1d8230d54341deb76f0d86f1a65a70.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=460&h=259&fit=fill&bg=%23fff&s=0361a059691786f26c59f0bd101cff11"},
+{"name":"Hotdog Special","description":"A very special hotdog.","price":"7","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fb\/Hotdog_-_Evan_Swigart.jpg\/640px-Hotdog_-_Evan_Swigart.jpg"},
+{"name":"Bacon Cheesedog","description":"A very cheesy hotdog.","price":"2","image":"https:\/\/live.staticflickr.com\/6130\/5970541329_8164e3f8fb_b.jpg"},
+{"name":"King Size Hotdog","description":"This thing is enormous!","price":"10","image":"https:\/\/www.washingtonpost.com\/resizer\/D6V5TO35ggS_RU7kLijiFiHLO7s=\/arc-anglerfish-washpost-prod-washpost\/public\/IPJAY7WQUAI6ZCDL353BQPJDH4.jpg"},
+{"name":"Kiddie Hotdog","description":"Perfect for the little ones.","price":"6","image":"https:\/\/www.scnbnc.com\/wp-content\/uploads\/2019\/07\/Kids-Meal-Hot-Dog.jpg"},
+{"name":"Chocolate Vanilla","description":"A classic favorite.","price":"7","image":"https:\/\/insanelygoodrecipes.com\/wp-content\/uploads\/2021\/07\/Chocolate-Shake-with-Chocolate-Syrup-Whipped-Cream-and-Cherry.jpg"},
+{"name":"Strawberry Smoothie","description":"Light and delicious!","price":"2","image":"https:\/\/files.selecthealth.cloud\/api\/public\/content\/221561-Strawberry_smoothie_blog_lg.jpg"},
+{"name":"Mango Banana Medley","description":"Bursting with fruity flavor!","price":"10","image":"https:\/\/i.ytimg.com\/vi\/Cs7Td0J9UvE\/maxresdefault.jpg"},
+{"name":"Dark Chocolate Supreme","description":"Darkly decadent.","price":"6","image":"https:\/\/veann.com\/wp-content\/uploads\/2016\/11\/image-2016-11-04-1-750x418.jpg"},
+{"name":"Strawberry Waffle","description":"A classic favorite.","price":"7","image":"https:\/\/www.midgetmomma.com\/wp-content\/uploads\/2014\/01\/Strawberry-Waffles-10.jpg"},
+{"name":"Bacon and Eggs","description":"Packed with protein.","price":"2","image":"https:\/\/food.fnr.sndimg.com\/content\/dam\/images\/food\/fullset\/2011\/11\/14\/1\/FNM_120111-OOTB-007_s4x3.jpg.rend.hgtvcom.616.462.suffix\/1371602902394.jpeg"},
+{"name":"French Toast With Eggs","description":"Our special recipe","price":"10","image":"https:\/\/www.beeyondcereal.com\/wp-content\/uploads\/2021\/09\/Sheet-Pan-French-Toast-Breakfast1.jpg"},
+{"name":"Bacon and Pancakes","description":"Perfect for any morning.","price":"6","image":"https:\/\/recipes.net\/wp-content\/uploads\/2020\/03\/classic-sunny-side-up-eggs-with-bacon-and-pancakes-recipes.jpg"}
+]
+
