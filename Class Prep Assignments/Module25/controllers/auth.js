@@ -15,6 +15,8 @@ exports.signup = (req, res, next) => {
   const email = req.body.email;
   const name = req.body.name;
   const password = req.body.password;
+
+  console.log(email, name, password);
   bcrypt
     .hash(password, 12)
     .then((hashedPassword) => {
@@ -42,15 +44,17 @@ exports.login = (req, res, next) => {
   let loadedUser;
   User.findOne({ email: email })
     .then((user) => {
+      console.log(password, user.password);
       if (!user) {
         const error = new Error("A user with this email could not be found");
         error.statusCode = 401;
         throw error;
       }
       loadedUser = user;
-      bcrypt.compare(password, user.password);
+      return bcrypt.compare(password, user.password);
     })
-    .then((isEqual) => {
+    .then(isEqual => {
+      console.log(isEqual);
       if (!isEqual) {
         const error = new Error("Wrong password");
         error.statusCode = 401;
