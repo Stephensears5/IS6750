@@ -1,0 +1,13 @@
+<div class="sidebar">
+    <h1>Menu</h1>
+    <ul class="navigation">
+        <% for (let i = 0; i < categories.length; i++) { %>
+            <li class="<% i === 0 ? "first" : "" %>">
+                <a class="<%= categories[i]._id === category._id ? "active" : "" %>" href="/menu/<%= categories[i].slug %>"><%= categories[i].name.toUpperCase() %></a>
+            </li>
+            <% } %>
+       
+       
+    </ul>
+    <a href="/menu/burgers" class="download">&nbsp;</a>
+</div>
